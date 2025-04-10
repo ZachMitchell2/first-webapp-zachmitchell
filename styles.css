@@ -1,1 +1,99 @@
+/* Add CSS styles for your web site here and use them in index.html. */
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+    padding: 20px;
+    background-color: rgb(200, 235, 205);
+    color:rgb(47, 79, 79);
+    border-radius: 15px;
+    text-wrap: wrap;
+}
+
+header{
+    background-color: rgb(150,200,175);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: auto;
+    list-style-type: none;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    color:rgb(47, 79, 79);
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav ul li a:hover{
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+footer{
+    background-color:rgb(150,200,175);
+    padding: 10px;
+    text-align:center;
+    border-radius:15px;
+}
+
+main{
+    text-align:center;
+}
+
+table, th, td{
+    border: 1px solid;
+}
+
+th, td{
+    padding: 5px;
+}
+
+td{
+    text-align: left;
+}
+
+th{
+    background-color:rgb(150,200,175)
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.flagDrop{
+    background-color: white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.dragImg{
+    border-color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    min-height: 80px;
+    max-height: 80px;
+    min-width: 120px;
+    max-width: 120px;
+}
