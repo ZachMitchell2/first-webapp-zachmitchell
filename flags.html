@@ -1,1 +1,79 @@
+<!DOCTYPE html>
 
+<html>
+
+    <head>
+        <title>ECS indiv project</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Learn</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="flags.html">Flags</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <h1>Flags</h1>
+            <p>Drag and drop the flags into the corresponding white box. Submit your answer with the button below to check if you sorted them correctly.</p>
+
+            <br>
+
+            <img src="images/germanyFlag.png" alt="Image of the Earth from space." draggable="true" class="dragImg" id="germany" ondragstart="dragStart(event)">
+            <img src="images/italyFlag.png" alt="Image of the Earth from space." draggable="true" class="dragImg" id="italy" ondragstart="dragStart(event)">
+            <img src="images/russiaFlag.png" alt="Image of the Earth from space." draggable="true" class="dragImg" id="russia" ondragstart="dragStart(event)">
+
+            <p>Russia</p>
+            <div id="div1" class="flagDrop" ondrop="dragEnd(event)" ondragover="dragOver(event)"><br></div>
+            <p>Germany</p>
+            <div id="div2" class="flagDrop" ondrop="dragEnd(event)" ondragover="dragOver(event)"><br></div>
+            <p>Italy</p>
+            <div id="div3" class="flagDrop" ondrop="dragEnd(event)" ondragover="dragOver(event)"><br></div>
+
+            <br>
+
+            <button id="showAnswers" type="button" onclick="flagAnswers()">Show Correct Answers</button>
+
+            <div id="flagAnswers">
+
+                <p>These are the correct answers!</p>
+
+                <table>
+                    <table>
+                        <tr>
+                            <th>Country</th>
+                            <td>Russia</td>
+                            <td>Germany</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <th>Flag</th>
+                            <td><img src="images/russiaFlag.png" alt="Flag of Germany" class="dragImg"></td>
+                            <td><img src="images/germanyFlag.png" alt="Flag of Russia" class="dragImg"></td>
+                            <td><img src="images/italyFlag.png" alt="Flag of Italy" class="dragImg"></td>
+                        </tr>
+                    </table>
+                </table>
+
+            </div>
+
+            <br>
+
+        </main>
+
+        <footer>
+            <p>&copy; Random Copyright 2025</p>
+        </footer>
+
+    </body>
+
+</html>
